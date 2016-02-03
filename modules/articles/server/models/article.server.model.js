@@ -14,6 +14,18 @@ var ArticleSchema = new Schema({
     type: Date,
     default: Date.now
   },
+  section: {
+    type: String,
+    default: '',
+    trim: true,
+    required: 'Section cannot be blank'
+  },
+  location:{ 
+    type: String,
+    default: '',
+    trim: true,
+    required :'Location cannot be blank'
+  },
   title: {
     type: String,
     default: '',
